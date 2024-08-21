@@ -1,0 +1,24 @@
+body {
+    background-color: darkslategray;
+    margin: 0;
+    padding: 0;
+}
+#home {
+    background-image: url('./img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:  400px;
+}
+
+#home h1 {
+    font-size: 40px;
+    color: rgb(77, 44, 2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+.content {
+    padding-top: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
