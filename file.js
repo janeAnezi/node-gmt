@@ -1,14 +1,14 @@
 
 const fs = require('fs'); //import the core modules that we need to interact with our file system
 
-
+// console.log(fs);
 // reading files
-// fs.readFile('./docs/blog.txt', (err, data) => {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log(data.toString());  // this is going to out put  a buffer which is the package of data that was sent when we run the file
-// } )
+fs.readFile('./docs/blog.txt', (err, data) => {
+    if (err) {
+        console.log(err);
+    }
+    console.log(data);  // this is going to output  a buffer which is the package of data that was sent when we run the file
+} )
 
 // writing files
 // fs.writeFile('./docs/blog.txt', 'Good day its Node Time!', (err) => {
@@ -74,33 +74,33 @@ const fs = require('fs'); //import the core modules that we need to interact wit
 // }
 
 // // deleting files
-if(fs.existsSync('./docs/deleteme.txt')) {
-    fs.unlink('./docs/deleteme.txt', (err) => {
-        if(err) {
-            console.log(err);
-        }
-        console.log('file deleted');
-    })
-}
+// if(fs.existsSync('./docs/deleteme.txt')) {
+//     fs.unlink('./docs/deleteme.txt', (err) => {
+//         if(err) {
+//             console.log(err);
+//         }
+//         console.log('file deleted');
+//     })
+// }
 
 
 
 
 
 
-if(fs.existsSync('./docs/deleteme.txt')) {
-    fs.unlink('./docs/deleteme.txt', (err) => {
-        if (err) {
-            console.log(err);
-        }
-        console.log('file deleted!');
-    })
-}
+// if(fs.existsSync('./docs/deleteme.txt')) {
+//     fs.unlink('./docs/deleteme.txt', (err) => {
+//         if (err) {
+//             console.log(err);
+//         }
+//         console.log('file deleted!');
+//     })
+//}
 
-fs.unlink('./docs/assgnment.txt', (err) => {
-    if (err) {
-        console.log(err);
-    }
-    console.log('File deleted!');
-})
+// fs.unlink('./docs/assgnment.txt', (err) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     console.log('File deleted!');
+// })
 

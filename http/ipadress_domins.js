@@ -40,6 +40,15 @@ const server = http.createServer((request, response) => {
     // basic routing
     let path = './http/';
     switch (request.url) {
+        case '/':
+            path += 'index.html';
+            break;
+        case '/':
+            path += 'about.html';
+            break;
+        default:
+            path += '404.html';
+    }
 
 
     // set the response text

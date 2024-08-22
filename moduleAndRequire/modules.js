@@ -3,6 +3,7 @@
 const newFile = require('./people');
 
 console.log(newFile);
+
 //console.log(nw.people, nw.age);
 // const { people, age } = require('./people');
 // console.log(nw);

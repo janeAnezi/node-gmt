@@ -7,16 +7,18 @@ const greet = (name) => {
 
 greet('Ahnnie')
 
-console.log(globalThis);
+// console.log(globalThis);
 
-setTimeout(() => {
-    console.log('in the time out')
-    clearInterval(int)
-}, 3000)
+// setTimeout(() => {
+//     console.log('in the time out')
+//     clearInterval(int)
+// }, 5000)
 
-let int = setInterval(() => {
-    console.log('in the interval');
-}, 1000);
+
+// const int = setInterval(() => {
+//     console.log('in the interval');
+// }, 1000);
+
 
 console.log(__dirname);
 console.log(__filename);

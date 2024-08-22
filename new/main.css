@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #home {
     background-image: url('./img.jpeg');
     background-repeat: no-repeat;
@@ -16,9 +17,77 @@ body {
     color: rgb(77, 44, 2);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 0;
+    text-shadow: 1px 2px black;
+}
+.page {
+    color: aquamarine;
 }
 .content {
     padding-top: 100px;
     padding-left: 100px;
     text-align: center;
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 0 90px 0;
+}
+.about-box {
+    width: 30%;
+    text-align: center;
+    border: 2px blanchedalmond dotted;
+    box-shadow: 2px 4px rgb(134, 133, 133);
+}
+.center {
+    background-color: bisque;
+    padding: 2px 4px 3px 4px;
+    border-width: 4px;
+    border-color: rgb(165, 205, 5);
+    border-style: solid;
+    border-radius: 50px 6px 15px 8px;
+}
+.about-box:hover {
+    background-color: pink;
+    color: green;
+}
+#contact {
+    text-align: center;
+    background-color: pink;
+    padding: 50px 0;
+}
+.contact-title {
+    font-size: 30px;
+}
+#contact button {
+   border: none;
+   background-color: darkslategray;
+   padding: 12px;
+   width: 40%;
+   border-radius: 8px;
+}
+#contact button:hover {
+    background-color: rgb(69, 107, 107);
+}
+#contact button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.contact-box img {
+    border-radius: 50%;
+}
+.parag {
+    width: 30%;
+    margin-left: 15px ;
+}
+.parag p {
+    line-height: 30px;
 }
