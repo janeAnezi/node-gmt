@@ -5,50 +5,36 @@
 
 const http = require('http');
 
-
-
-
-
-const fs = require('fs');
+// const fs = require('fs');
 
 
 // that is the method that creates a server for us
 const server = http.createServer((request, response) => {
-    // console.log('request made');
+    console.log('request made');
     // console.log(request.url);
     // console.log(request.method);
 
-
-
-
-
     // console.log(request.url, request.method);
 
-
-
-
-
-
     // set header content type
-    response.setHeader('Content-Type', 'text/html');
+    // response.setHeader('Content-Type', 'text/html');
+    // response.write('Hey i am your server, and i just responded')
 
     // response.write('<h1>hello you</h1>')
-    // response.write('Hello Razaq')
-
-
-
+    
     // basic routing
-    let path = './http/';
-    switch (request.url) {
-        case '/':
-            path += 'index.html';
-            break;
-        case '/':
-            path += 'about.html';
-            break;
-        default:
-            path += '404.html';
-    }
+    // let path = './http/';
+    // switch (request.url) {
+    //     case '/':
+    //         path += 'index.html';
+    //         break;
+    //     case '/about':
+    //         path += 'about.html';
+    //         break;
+    //     default:
+    //         path += '404.html';
+    //         break
+    // }
 
 
     // set the response text
@@ -56,23 +42,16 @@ const server = http.createServer((request, response) => {
     // response.write('<h1>Let Get Coding</h1>')
     // response.end();
 
-
-
-
-
     // sending an html file
-    fs.readFile('./index.html', (err, data) => {
-        if (err) {
-            console.log(err);
-            response.end();
-        } else {
-            response.write(data);
-            response.end();
-        }
-    })
-
-    
-
+    // fs.readFile('./http/index.html', (err, data) => {
+    //     if (err) {
+    //         console.log(err);
+    //         response.end();
+    //     } else {
+    //         // response.write(data);
+    //         response.end(data);
+    //     }
+    // })
 
 
 }); 
@@ -81,8 +60,8 @@ const server = http.createServer((request, response) => {
 
 
 
-server.listen(3000, 'localhost', () => {
-    console.log('listening for request on port 3000');
+server.listen(4000, 'localhost', () => {
+    console.log('listening for request on port 4000');
 })
 
 

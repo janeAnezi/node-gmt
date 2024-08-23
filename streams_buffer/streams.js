@@ -7,20 +7,19 @@ const fs = require('fs') // first we require our file system module
 const readStream = fs.ReadStream('../docs/blog2.txt')    // here we are telling node where to read data from
 //  we are reading from a file called blog2.txt in the docs folder
 
-const writeStream = fs.WriteStream('../docs/blog3.txt')
+// const writeStream = fs.WriteStream('../docs/blog3.txt')
 
-// readStream.on('data', (chunck) => { // 'on' is an event listener
-
-//     console.log('my new data');
-//     console.log(chunck);
+readStream.on('data', (chunck) => { // 'on' is an event listener
+   console.log('....new info......');
+   console.log(chunck.toString());
    // console.log(chuck.toString()) // here we are logging the data as it is being read
 
-//    writeStream.write('\n NEW CHUNCK\n')
-//    writeStream.write(chunck)
+   // writeStream.write('\n NEW CHUNCK\n')
+   // writeStream.write(chunck)
 
-// })
+})
 
-readStream.pipe(writeStream);
+// readStream.pipe(writeStream);
 
 
 // another core built in module is the http module - to create server whichnis what is used to manage the backend of a website

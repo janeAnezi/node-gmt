@@ -7,17 +7,18 @@ fs.readFile('./docs/blog.txt', (err, data) => {
     if (err) {
         console.log(err);
     }
-    console.log(data);  // this is going to output  a buffer which is the package of data that was sent when we run the file
+    console.log(data.toString());  // this is going to output  a buffer which is the package of data that was sent when we run the file
 } )
 
 // writing files
-// fs.writeFile('./docs/blog.txt', 'Good day its Node Time!', (err) => {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log('Done writing the file')
+fs.writeFile('./text.txt', 'new file with content', (err) => {
+    if (err) {
+        console.log(err);
+    }
+    console.log('Done writing the file')
 
-// })
+})
+
 
 // fs.writeFile('./docs/assgnment.txt', 'This is my first new file', () => {
 //     console.log('File was written')
@@ -41,7 +42,7 @@ fs.readFile('./docs/blog.txt', (err, data) => {
 // })
 
 
-// fs.rmdir('./data', (err) => {
+// fs.rmdir('./assets', (err) => {
 //     if(err) {
 //         console.log(err);
 //     }
@@ -97,10 +98,10 @@ fs.readFile('./docs/blog.txt', (err, data) => {
 //     })
 //}
 
-// fs.unlink('./docs/assgnment.txt', (err) => {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log('File deleted!');
-// })
+fs.unlink('./text.txt', (err) => {
+    if (err) {
+        console.log(err);
+    }
+    console.log('File deleted!');
+})
 
