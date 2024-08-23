@@ -1,9 +1,16 @@
 const http = require('http');
-
 const fs = require('fs');
+const _ = require('lodash');
 
 const server = http.createServer((req, res) => {
     console.log('sever has beeen visited');
+
+    // lodash (to get random nunbers)
+    const num = _.random(0, 20);
+    console.log(num);  
+
+    // lodash (to run a function once)
+    const greet = _.once(() => {console.log('Hello');})
 
     res.setHeader('Content-Type', 'text/html')
 
