@@ -23,8 +23,8 @@ const server = http.createServer((request, response) => {
     // response.write('<h1>hello you</h1>')
     
     // basic routing
-    // let path = './http/';
-    // switch (request.url) {
+    // let path = './';
+    // switch(request.url) {
     //     case '/':
     //         path += 'index.html';
     //         break;
